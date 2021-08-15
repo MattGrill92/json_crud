@@ -1,7 +1,7 @@
 ﻿
 namespace json_crud
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,32 @@ namespace json_crud
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pgMain = new System.Windows.Forms.PropertyGrid();
+            this.SuspendLayout();
+            // 
+            // pgMain
+            // 
+            this.pgMain.Location = new System.Drawing.Point(12, 12);
+            this.pgMain.Name = "pgMain";
+            this.pgMain.Size = new System.Drawing.Size(776, 426);
+            this.pgMain.TabIndex = 0;
+            // 
+            // FormMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pgMain);
+            this.Name = "FormMain";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PropertyGrid pgMain;
     }
 }
 
